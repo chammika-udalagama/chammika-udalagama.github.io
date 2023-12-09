@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: 'docs'
+
+website:
+  title: "Chammika Udalagama"
+  description: "Physics, Education & Technology"
+  open-graph: 
+    locale: en_BR
+
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "Home"
+        file: index.qmd
+      # - text: "Papers"
+      #   href: papers
+      # - text: "Presentations"
+      #   href: presentations
+      # - text: "Software citations"
+      #   href: software_citations.html
+      # - text: "Blog"
+      # href: blog.html
+      # - icon: rss
+      #   href: blog.xml
+page-footer:
+  left: "© Copyright 2024 Chammika Udalaga. Except where otherwise noted, all text and images licensed CC-BY-NC 4.0."
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: 
+  render-on-save: true
+
