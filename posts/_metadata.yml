@@ -1,0 +1,14 @@
+# options specified here will apply to all posts in this folder
+
+# prevents posts from re-rendering unless explicitly told to do so (for more, see https://quarto.org/docs/projects/code-execution.html#freeze)
+# freeze: auto
+
+# enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
+title-block-banner: true
+
+author:
+  - name: Chammika da
+    url: https://chammika-udalagama.github.io/
+    orcid: 0000-0001-6830-5458
+    affiliation: Special Programme in Science (SPS) & Department of Physics, National University of Singapore.
+    # affiliation-url: https://ucsb-meds.github.io/ 

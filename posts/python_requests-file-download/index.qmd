@@ -1,0 +1,26 @@
+---
+title: "The Python `requests` package"
+description: "How to use `requests` package to download files from sites."
+
+date: 10-24-2022
+draft: false 
+categories: [Python] # self-defined categories
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+# image: preview-image.png
+---
+
+
+```python
+import requests
+```
+
+```python
+url = '?'
+local_filename = '?'
+
+response = requests.get(url)
+
+with open(local_filename, 'wb') as file:
+    file.write(response.content)
+```

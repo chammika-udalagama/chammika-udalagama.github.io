@@ -14,6 +14,7 @@ website:
     right:
       - text: "Home"
         file: index.qmd
+      - posts.qmd
       # - text: "Papers"
       #   href: papers
       # - text: "Presentations"
