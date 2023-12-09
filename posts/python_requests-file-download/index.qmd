@@ -2,7 +2,7 @@
 title: "The Python `requests` package"
 description: "How to use `requests` package to download files from sites."
 
-date: 10-24-2022
+# date: 10-24-2022
 draft: false 
 categories: [Python] # self-defined categories
 # citation: 
@@ -10,6 +10,16 @@ categories: [Python] # self-defined categories
 # image: preview-image.png
 ---
 
+# Python's [Requests](https://docs.python-requests.org/) Magic
+
+The `requests` package is a powerful library that allows you to communicate with websites and web servers. For example, you can download files programmatically, which you would otherwise have to do manually by pressing a button or two.
+
+
+## Downloading files programmatically
+
+::: {.panel-tabset}
+
+### General Code
 
 ```python
 import requests
@@ -24,3 +34,26 @@ response = requests.get(url)
 with open(local_filename, 'wb') as file:
     file.write(response.content)
 ```
+
+### An Example
+
+```python
+
+base_url="https://www.asc.ohio-state.edu/gan.1/teaching/winter10/"
+
+for i in range(1,40):
+    filename = f'Chapter{i}.pdf'             
+    file_url = f'{base_url}/{filename}'
+    response = requests.get(file_url)
+
+    with open(filename,'wb') as file:
+        file.write(response.content)
+```
+
+**Some things to note:**
+
+- You must look at the file url to extract the 'base url'.
+- You must look at the file url to determine the naming convention used for the filename.
+- I did not know how many files there were. So, I used 40.
+
+:::
