@@ -1,6 +1,6 @@
 ---
 title: "My Little Corner of Space-Time in the Digital Universe"
-subtitle: 'About Physics, Education and Programming'
+subtitle: 'About Physics, Education, Programming and Other Such Stuff'
 ---
 
 # Now that you are here...
