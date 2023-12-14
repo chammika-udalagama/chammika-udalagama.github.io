@@ -1,18 +1,18 @@
 ---
-title: "The Python `requests` package"
-description: "How to use `requests` package to download files from sites."
+title: "The Python `requests` module"
+description: "How to use `requests` module to download files from sites."
 
 # date: 10-24-2022
 draft: false 
 categories: [Python] # self-defined categories
 # citation: 
 #   url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
-# image: preview-image.png
+image: python-requests.png
 ---
 
 # Python's [Requests](https://docs.python-requests.org/) Magic
 
-The `requests` package is a powerful library that allows you to communicate with websites and web servers. For example, you can download files programmatically, which you would otherwise have to do manually by pressing a button or two.
+The `requests` module is a powerful library that allows you to communicate with websites and web servers. For example, you can download files programmatically, which you would otherwise have to do manually by pressing a button or two.
 
 
 ## Downloading files programmatically

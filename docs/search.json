@@ -4,19 +4,19 @@
     "href": "posts.html",
     "title": "This and That",
     "section": "",
-    "text": "The Python requests package\n\n\n\nPython\n\n\n\nHow to use requests package to download files from sites.\n\n\n\nChammika da\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "The Python requests module\n\n\n\nPython\n\n\n\nHow to use requests module to download files from sites.\n\n\n\nChammika Udalagama\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/python_requests-file-download/index.html",
     "href": "posts/python_requests-file-download/index.html",
-    "title": "The Python requests package",
+    "title": "The Python requests module",
     "section": "",
-    "text": "The requests package is a powerful library that allows you to communicate with websites and web servers. For example, you can download files programmatically, which you would otherwise have to do manually by pressing a button or two.\n\n\n\nGeneral CodeAn Example\n\n\nimport requests\nurl = '?'\nlocal_filename = '?'\n\nresponse = requests.get(url)\n\nwith open(local_filename, 'wb') as file:\n    file.write(response.content)\n\n\n\nbase_url=\"https://www.asc.ohio-state.edu/gan.1/teaching/winter10/\"\n\nfor i in range(1,40):\n    filename = f'Chapter{i}.pdf'             \n    file_url = f'{base_url}/{filename}'\n    response = requests.get(file_url)\n\n    with open(filename,'wb') as file:\n        file.write(response.content)\nSome things to note:\n\nYou must look at the file url to extract the ‘base url’.\nYou must look at the file url to determine the naming convention used for the filename.\nI did not know how many files there were. So, I used 40."
+    "text": "The requests module is a powerful library that allows you to communicate with websites and web servers. For example, you can download files programmatically, which you would otherwise have to do manually by pressing a button or two.\n\n\n\nGeneral CodeAn Example\n\n\nimport requests\nurl = '?'\nlocal_filename = '?'\n\nresponse = requests.get(url)\n\nwith open(local_filename, 'wb') as file:\n    file.write(response.content)\n\n\n\nbase_url=\"https://www.asc.ohio-state.edu/gan.1/teaching/winter10/\"\n\nfor i in range(1,40):\n    filename = f'Chapter{i}.pdf'             \n    file_url = f'{base_url}/{filename}'\n    response = requests.get(file_url)\n\n    with open(filename,'wb') as file:\n        file.write(response.content)\nSome things to note:\n\nYou must look at the file url to extract the ‘base url’.\nYou must look at the file url to determine the naming convention used for the filename.\nI did not know how many files there were. So, I used 40."
   },
   {
     "objectID": "posts/python_requests-file-download/index.html#downloading-files-programmatically",
     "href": "posts/python_requests-file-download/index.html#downloading-files-programmatically",
-    "title": "The Python requests package",
+    "title": "The Python requests module",
     "section": "",
     "text": "General CodeAn Example\n\n\nimport requests\nurl = '?'\nlocal_filename = '?'\n\nresponse = requests.get(url)\n\nwith open(local_filename, 'wb') as file:\n    file.write(response.content)\n\n\n\nbase_url=\"https://www.asc.ohio-state.edu/gan.1/teaching/winter10/\"\n\nfor i in range(1,40):\n    filename = f'Chapter{i}.pdf'             \n    file_url = f'{base_url}/{filename}'\n    response = requests.get(file_url)\n\n    with open(filename,'wb') as file:\n        file.write(response.content)\nSome things to note:\n\nYou must look at the file url to extract the ‘base url’.\nYou must look at the file url to determine the naming convention used for the filename.\nI did not know how many files there were. So, I used 40."
   },
