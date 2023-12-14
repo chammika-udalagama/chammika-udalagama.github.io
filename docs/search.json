@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "This and That",
     "section": "",
-    "text": "The Python requests module\n\n\n\nPython\n\n\n\nHow to use requests module to download files from sites.\n\n\n\nChammika Udalagama\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Using the Canvas LMS API with Python\n\n\n\nPython\n\n\nCanvas\n\n\nAPI\n\n\n\nSome code to use the Canvas API to create and populate quizzes.\n\n\n\nChammika Udalagama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Python requests module\n\n\n\nPython\n\n\n\nHow to use requests module to download files from sites.\n\n\n\nChammika Udalagama\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/python_requests-file-download/index.html",
@@ -19,6 +19,20 @@
     "title": "The Python requests module",
     "section": "",
     "text": "General CodeAn Example\n\n\nimport requests\nurl = '?'\nlocal_filename = '?'\n\nresponse = requests.get(url)\n\nwith open(local_filename, 'wb') as file:\n    file.write(response.content)\n\n\n\nbase_url=\"https://www.asc.ohio-state.edu/gan.1/teaching/winter10/\"\n\nfor i in range(1,40):\n    filename = f'Chapter{i}.pdf'             \n    file_url = f'{base_url}/{filename}'\n    response = requests.get(file_url)\n\n    with open(filename,'wb') as file:\n        file.write(response.content)\nSome things to note:\n\nYou must look at the file url to extract the ‘base url’.\nYou must look at the file url to determine the naming convention used for the filename.\nI did not know how many files there were. So, I used 40."
+  },
+  {
+    "objectID": "posts/python_canvas-api/index.html",
+    "href": "posts/python_canvas-api/index.html",
+    "title": "Using the Canvas LMS API with Python",
+    "section": "",
+    "text": "Canvas is a popular commercial LMS our university recently migrated to. Canvas offers an API1 to implement typical LMS activities.\nAn API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future.\nIn this post, I will share some code I wrote to create and populate MCQ quizzes. The code does not have the Apple-like polish. However, I have laid out the code so anyone new to programming can still use it."
+  },
+  {
+    "objectID": "posts/python_canvas-api/index.html#footnotes",
+    "href": "posts/python_canvas-api/index.html#footnotes",
+    "title": "Using the Canvas LMS API with Python",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAPI: Application Programme Interface↩︎"
   },
   {
     "objectID": "index.html",

@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/python_canvas-api/index.html",
       "/posts/python_requests-file-download/index.html"
     ]
   }

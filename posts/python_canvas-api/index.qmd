@@ -1,0 +1,77 @@
+---
+title: "Using the Canvas LMS API with Python"
+description: "Some code to use the Canvas API to create and populate quizzes."
+
+# date: 10-24-2022
+draft: false 
+categories: [Python, Canvas, API] # self-defined categories
+# citation: 
+#   url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+image: python-canvas-api.png
+---
+
+# How to talk to Canvas, programmatically
+
+[Canvas](https://www.canvas.com/) is a popular commercial LMS our university recently migrated to. Canvas offers an API^[API: **A**pplication **P**rogramme **I**nterface] to implement typical LMS activities.
+
+An API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future.
+
+In this post, I will share some code I wrote to create and populate MCQ quizzes. The code does not have the Apple-like polish. However, I have laid out the code so anyone new to programming can still use it. 
+
+# The code
+
+- The code lives on the Github repository: [github.com/chammika-udalagama/canva-api](https://github.com/chammika-udalagama/canva-api).<br>If you are new to Github you can just download the repository as a zip file and then unzip, and you are ready to go.
+- Requirements:
+  - You will need Python installed on your machine. Alternatively, you can use a service like Google's Colab, but be careful about keeping your API-KEY secure (see below).
+  <!-- - You will need to install the following Python packages:<br>
+    `x` -->
+
+# How to use the code
+
+:::{.panel-tabset}
+
+## Typical Workflow
+
+0. Create an API key to access your Canvas account (You need to do this only once).
+1. Create an Excel file with your questions and quiz information using the template provided.
+2. Run the Python script.
+
+## API key
+
+### How to generate an API Key
+
+Here is how you can create an API key
+
+1. Log in to Canvas.
+2. Click on your profile picture/name and select "Settings."
+3. Navigate to "Approved Integrations" in the sidebar.
+4. Generate a new API key by providing the necessary details.
+5. Copy the generated key.
+6. Treat the key as a password and keep it securely. You can regenerate if compromised.
+
+### How to use the key
+
+To use the key, create a new file called `constants.py` with the following content:
+
+```python
+API_TOKEN = "COPY_YOUR_API_TOKEN_HERE"
+```
+
+## Excel file
+
+Please look at the example Excel file (`Canvas-Question-Bank.xlsx`) provided to see how the details of quizzes and questions have been declared. It should be self-explanatory so I won't spend time on the details. However, it is important to note the following:
+
+- `My Quiz Label` should be unique and contain no spaces.
+- Use `My Quiz Label` to link the questions to the quizzes.
+- You can include the same question in more than one quiz.
+- Always place the correct answer as option 'A.'
+
+## Running the code
+
+Once you have prepared your Excel file, you can just run the script in the terminal (or Anaconda prompt) by invoking:
+
+```python
+python main.py
+```
+
+:::
