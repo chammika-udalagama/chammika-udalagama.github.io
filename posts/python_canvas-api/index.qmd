@@ -20,7 +20,7 @@ In this post, I will share some code I wrote to create and populate MCQ quizzes.
 
 # The code
 
-- The code lives on the Github repository: [github.com/chammika-udalagama/canva-api](https://github.com/chammika-udalagama/canva-api).<br>If you are new to Github you can just download the repository as a zip file and then unzip, and you are ready to go.
+- The code lives on the Github repository: [github.com/chammika-udalagama/Canvas-API](https://github.com/chammika-udalagama/Canvas-API).<br>If you are new to Github you can just download the repository as a zip file and then unzip, and you are ready to go.
 - Requirements:
   - You will need Python installed on your machine. Alternatively, you can use a service like Google's Colab, but be careful about keeping your API-KEY secure (see below).
   <!-- - You will need to install the following Python packages:<br>

@@ -2,7 +2,9 @@
 title: "This and That"
 listing: 
   contents: posts # all Quarto docs in the `posts` directory will be included on your listing page
-  type: grid # or `default` or `table`; each type has its own set of yaml options to include
+  type: default # grid or `default` or `table`; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
+# page-layout: full
+# title-block-banner: true
 ---
