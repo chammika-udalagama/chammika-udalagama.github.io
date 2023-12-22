@@ -13,4 +13,7 @@ author:
     affiliation: Special Programme in Science (SPS) & Department of Physics, National University of Singapore.
     # affiliation-url: https://ucsb-meds.github.io/ 
 
+bibliography: "../MyZoteroLibrary.bib"
+biblio-style: apalike
+# csl: "../chicago-fullnote-bibliography.csl"
 

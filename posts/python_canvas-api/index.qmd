@@ -14,7 +14,7 @@ image: python-canvas-api.png
 
 [Canvas](https://www.canvas.com/) is a popular commercial LMS our university recently migrated to. Canvas offers an API^[API: **A**pplication **P**rogramme **I**nterface] to implement typical LMS activities.
 
-An API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future.
+An API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future. More importantly, freeing you from the mundane actions of setting up quizzes will allow you to use these quizzes in more creative ways to realises cool things like interleaving and spaced recall (for example, see @weinstein2016 or @weinstein2018).
 
 In this post, I will share some code I wrote to create and populate MCQ quizzes. The code does not have the Apple-like polish. However, I have laid out the code so anyone new to programming can still use it. 
 

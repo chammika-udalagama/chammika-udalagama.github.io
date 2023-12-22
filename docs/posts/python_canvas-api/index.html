@@ -56,7 +56,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -200,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="how-to-talk-to-canvas-programmatically" class="level1">
 <h1>How to talk to Canvas, programmatically</h1>
 <p><a href="https://www.canvas.com/">Canvas</a> is a popular commercial LMS our university recently migrated to. Canvas offers an API<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to implement typical LMS activities.</p>
-<p>An API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future.</p>
+<p>An API is a way to programmatically implement actions (like creating and populating a quiz) instead of using the buttons and text inputs at the GUI. Once set up, this can make time-consuming tasks (e.g., setting up quizzes) extremely fast. So, whatever time you invest in getting familiar with the API will save you countless hours in the future. More importantly, freeing you from the mundane actions of setting up quizzes will allow you to use these quizzes in more creative ways to realises cool things like interleaving and spaced recall (for example, see <span class="citation" data-cites="weinstein2016">Weinstein, Nunes, and Karpicke (<a href="#ref-weinstein2016" role="doc-biblioref">2016</a>)</span> or <span class="citation" data-cites="weinstein2018">Weinstein, Madan, and Sumeracki (<a href="#ref-weinstein2018" role="doc-biblioref">2018</a>)</span>).</p>
 <p>In this post, I will share some code I wrote to create and populate MCQ quizzes. The code does not have the Apple-like polish. However, I have laid out the code so anyone new to programming can still use it.</p>
 </section>
 <section id="the-code" class="level1">
@@ -262,10 +281,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-weinstein2018" class="csl-entry" role="listitem">
+Weinstein, Yana, Christopher R. Madan, and Megan A. Sumeracki. 2018. <span>“Teaching the Science of Learning.”</span> <em>Cogn. Research</em> 3 (1): 2. <a href="https://doi.org/10.1186/s41235-017-0087-y">https://doi.org/10.1186/s41235-017-0087-y</a>.
+</div>
+<div id="ref-weinstein2016" class="csl-entry" role="listitem">
+Weinstein, Yana, Ludmila D. Nunes, and Jeffrey D. Karpicke. 2016. <span>“On the Placement of Practice Questions During Study.”</span> <em>Journal of Experimental Psychology: Applied</em> 22 (1): 72–84. <a href="https://doi.org/10.1037/xap0000071">https://doi.org/10.1037/xap0000071</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>API: <strong>A</strong>pplication <strong>P</strong>rogramme <strong>I</strong>nterface<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
